@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wether App</title>
+</head>
+<body>
+    <form action="/search" method="POST">
+        <label>Enter the Place
+            <input type="text" name="place" id="place">
+        </label>
+        <button type="submit" >Get Wether</button>
+    </form>
+    <div class="data">
+        <p>Observation time : <%= data.observation_time %></p>
+        <p>Temperature : <%= data.temperature %></p>
+        <p>Weather code : <%= data.weather_code %></p>
+        <p>Weather icons : <%= data.weather_icons %></p>
+        <p>Weather descriptions : <%= data.weather_descriptions %></p>
+        <p>Wind speed : <%= data.wind_speed %></p>
+        <p>Wind degree : <%= data.wind_degree %></p>
+        <p>Wind dir : <%= data.wind_dir %></p>
+        <p>Pressure : <%= data.pressure %></p>
+        <p>Precip : <%= data.precip %></p>
+        <p>Humidity : <%= data.humidity %></p>
+        <p>Cloudcover : <%= data.cloudcover %></p>
+        <p>Feelslike : <%= data.feelslike %></p>
+        <p>UV_index : <%= data.uv_index %></p>
+        <p>Visibility : <%= data.visibility %></p>
+    </div>
+</body>
+</html>
